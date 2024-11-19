@@ -1,0 +1,17 @@
+<%- include("menu.ejs") %>
+
+<div class="container">
+    <h1>Upload Product</h1>
+
+    <form id="add-user-form" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="name" id="name" required/><br>
+        <input type="text" name="price" placeholder="price" id="price" required/><br>
+        <input type="text" name="discount" placeholder="discount" id="discount" required/><br>
+        <input type="file" name="userfile" id="userfile" required/><br>
+        <input type="text" name="description" placeholder="description" id="description" required/><br>
+        <button type="submit" id="add-user">Upload Product</button>
+    </form>
+</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+

@@ -1,0 +1,23 @@
+<%- include("menu.ejs") %>
+<div class="container">
+  <div class="row">
+    <% data.forEach(function(product) { %>
+    <div class="col-xl-6">
+      <img
+        src="/xyz/<%= product.userfile %>"
+        alt="<%= product.name %>"
+        style="width: 200px; height: 200px"
+      />
+    </div>
+    <div class="col-xl-6">
+      <h1><%= product.name %></h1>
+      <strong style="text-decoration: line-through"
+        >₹<%= product.price %></strong
+      >
+      <strong>₹<%= product.discount %></strong><br />
+      <p><%= product.description %></p>
+      <button class="btn btn-success">Add</button>
+    </div>
+    <% }); %>
+  </div>
+</div>
